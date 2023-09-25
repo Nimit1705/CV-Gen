@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+  height: auto;
+  display: flex;
+  background-color: #EBECF0;
+}
+
+.container input:focus{
+  outline: none !important;
+}
+
+
+
+
+.cv{
+  margin: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  width: 50vw; /*yaaaaa================aaadddd=========*/
+  height: fit-content;
+  background-color: #FCFBF8;
+}
+
+.cv text{
+  color: azure;
+}
+
+.cv input{
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: #444440;
+}
+
+.header{
+  margin: 1.5em;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.full-name{
+  border: transparent;
+  font-size: 3.5em;
+  
+  
+}
+
+.position{
+  border: transparent;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.header::after{
+  content: '';
+  margin-top:25px;
+  border: 0.2vh solid #444440;
+}
+
+.socials{
+  gap: 0.2vw;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.socials input{
+  border: transparent;
+  font-size: 1em;
+  padding: 0.2em;
+  width: 25%;
+}
+
+.inputs-labels > .email{
+  width: 40%;
+}
+
+
+
+.inputs-labels{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials::after{
+  content: '';
+  margin-top:10px;
+  border: 0.2vh solid #444440;
+
+}
+
+
+.bio{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+}
+
+.bio:after{
+  content: '';
+  margin-top:1.2em;
+  border: 0.2vh solid #444440;
+}
+
+
+/* the form area */
+
+.components{
+  margin: 1em;
+  border: 2px solid rgb(142, 142, 142);
+  background-color: #ffffff;
+  width: 50vw;
+  height: auto;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.cv-form{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-elm{
+  padding: 1em;
+  padding-bottom: 0em;
+  background-color: #dedede;
+  border-radius: 1em;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  
+}
+
+
+.header-elm label{
+  font-size: larger;
+}
+
+.FName{
+  width: 97%;
+  font-size: 2em;
+  padding:0.2em;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  
+}
+
+
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  font-size: 1em;
+}
+
+.buttons button{
+  width: 20%;
+  height: 2em;
+  margin: 1em;
+  border-radius: 2em;
+  font-size: 1.2em;
+  border: transparent
+}
+
+.buttons button:hover{
+  background-color: aliceblue;
+}
+
+.buttons > :first-child{
+  color: rgb(0, 0, 0);
+}
+
+.buttons > :last-child{
+  color:rgb(255, 21, 60);
+}
+
+
+.position-form{
+  font-size:1.2em;
+  height: 1.5em;
+  width: 95%;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  padding-left: 0.3em;
+}
+
+
+
+
+/*========contact form========*/
+
+
+.contact{
+  margin-top: 10px;
+}
+
+.contact-form{
+  padding: 1em;
+  padding-bottom: 0em;
+  background-color: #dedede;
+  border-radius: 1em;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.contact-form input{
+  padding: 0.2em;
+  padding-left: 0.5em;
+  font-size: 1em;
+  width: 90%;
+  border-radius: 0.5em;
+  border: 1px solid #8d8d8d;
+}
+
+
+/*=====bio-text======*/
+
+.bio-text{
+  margin-top: 10px;
+}
+
+.bio-textarea{
+  padding: 1em;
+  padding-bottom: 0;
+  background-color: #dedede;
+  border-radius: 1em;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.bio-textarea textarea{
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-size: 1.2em;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*=======Tech skills==========*/
+
+.tech-skills{
+  margin-top: 10px;
+}
+
+.skill-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.skills{
+  display: flex;
+  gap: 10%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.5em;
+  color: #444440;
+}
+
+.skills h3{
+  width: 60%;
+}
+
+.skills li{
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-top: 0.8em;
+}
+
+.skill-list{
+  padding: 1em;
+  padding-bottom: 0;
+  background-color: #dedede;
+  border-radius: 1em;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+
+.skill-input{
+  width: 100%;
+  display: flex;
+  gap: 0.5em;
+}
+
+.add-skill,
+.remove-skill{
+  width: 2.5em;
+  aspect-ratio: 1/1;
+  font-size: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #8d8d8d;
+}
+
+.skill-input input{
+
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 80%;
+  border: 1px solid #8d8d8d;
+
+}
+
+
+.skill-container::after{
+  content: '';
+  height: 0;
+  width: 95%;
+  align-self: center;
+  border: 0.2vh solid #444440;
+}
+
+
+/*=======Education=======*/
+
+.education{
+  display: flex;
+  gap: 10%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.5em;
+  color: #444440;
+}
+
+.education-ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.education-ul h3, p, .grade-session{
+  margin-bottom: 0.2em;
+}
+
+
+
+.institute{
+  font-family: 'Acme', sans-serif;
+  font-size: 1.1em;
+}
+
+.grade-session{
+  display: flex;
+  font-style: italic;
+  font-size: smaller;
+}
+
+
+.session::before{
+  content: "";
+  border: 0.01em solid #444440;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.education-head{
+  margin-top: 10px;
+}
+
+.education-list{
+  padding: 1em;
+  padding-bottom: 0em;
+  background-color: #dedede;
+  border-radius: 1em;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.education-list input{
+  padding-left: 0.2em;
+}
+
+
+.edu-course-input{
+  font-size: 1.8em;
+  border-radius: 0.2em;
+  border: 1px solid grey;
+
+}
+
+.institute-input{
+  font-size: 1.2em;
+  border-radius: 0.3em;
+  border: 1px solid grey;
+  width: 85%;
+}
+
+.grade-session-input{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.grade-input{
+  display: flex;
+  gap: 0.2em;
+}
+
+.grade-input>:first-child,
+.grade-input>:last-child{
+  border-radius: 0.2em;
+  font-size: 1em;
+  width: 40%;
+  border: 1px solid grey;
+}
+
+.session-input{
+  display: flex;
+  gap:0.2em;
+}
+
+.session-input>:first-child,
+.session-input>:last-child{
+  width: 30%;
+  border-radius: 0.2em;
+  font-size: 1em;
+  border: 1px solid grey;
+}
+
+.add-education{
+  width: 30%;
+  align-self: center;
+  margin:1em;
+  margin-bottom: 0;
+  height: 1.7em;
+  border-radius: 2em;
+  font-size: 1.5em;
+  border: 1px solid grey;
+}
+
+.education-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.education-container::after{
+  content: '';
+  height: 0;
+  width: 95%;
+  align-self: center;
+  border: 1px solid #444440;
+}
+
+
+
+
+.saved{
+  border-color: #dedede;
+  background-color: #c5c5c5;
+}
+
+
+
+
+
+
+
+
+
